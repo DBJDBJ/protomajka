@@ -1,5 +1,13 @@
 
+- [compile this code](#compile-this-code)
+- [install protobuf-c](#install-protobuf-c)
+- [use protobuf-c](#use-protobuf-c)
+
+
 # compile this code
+
+if no protobuf-c please detour to [the next section](#install-protobuf-c) first. Read all to the end and come back here, please.
+
 Generate the C code from the message schema
 ```bash
 protoc-c --c_out=. message.proto
@@ -7,12 +15,14 @@ protoc-c --c_out=. message.proto
 
 Compile the sender program
 ```bash
-gcc -o sender sender.c message.pb-c.c -lprotobuf-c
+gcc  -I/usr/include/google/ -o sender sender.c message.pb-c.c -lprotobuf-c
 ```
+
+Note: `-I/usr/include/google/` is the place UNDER which Protobuf-c headers are installed in `99.9%` of cases. In case you are in the `0.1%` ones please amend accordingly.
 
 Compile the receiver program
 ```bash
-gcc -o receiver receiver.c message.pb-c.c -lprotobuf-c
+gcc -I/usr/include/google/ -o receiver receiver.c message.pb-c.c -lprotobuf-c
 ```
 
 # install protobuf-c
@@ -45,3 +55,5 @@ To use the protobuf-c library in your C programs, you will need to include the n
 ```bash
 gcc -I/usr/include/protobuf-c/ -o program program.c -lprotobuf-c
 ```
+
+Perhaps now you want to jump back to [the first section](#compile-this-code).
