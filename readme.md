@@ -25,9 +25,11 @@ Compile the receiver program
 gcc -I/usr/include/google/ -o receiver receiver.c message.pb-c.c -lprotobuf-c
 ```
 
-# install protobuf-c
+# install [protobuf-c](https://github.com/protobuf-c/protobuf-c)
 
-If you do not have the protobuf-c library and its header files installed on your Linux Mint system, you will need to install them before you can use the protobuf-c library in your C programs.
+(link to the usage [Synopsis](https://github.com/protobuf-c/protobuf-c#synopsis) )
+
+If you do not have the [protobuf-c](https://github.com/protobuf-c/protobuf-c) library and its header files installed on your Linux Mint system, you will need to install them before you can use the [protobuf-c](https://github.com/protobuf-c/protobuf-c) library in your C programs.
 
 You can install the protobuf-c library using the apt-get package manager. This will install the protobuf-c library and the necessary header files and libraries that you can use in your C programs.
 
