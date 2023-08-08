@@ -27,6 +27,8 @@ gcc -I/usr/include/google/ -o receiver receiver.c message.pb-c.c -lprotobuf-c
 
 # install [protobuf-c](https://github.com/protobuf-c/protobuf-c)
 
+Wiki is [here](https://github.com/protobuf-c/protobuf-c/wiki).
+
 If you do not have the [protobuf-c](https://github.com/protobuf-c/protobuf-c) library and its header files installed on your Linux Mint system, you will need to install them before you can use the [protobuf-c](https://github.com/protobuf-c/protobuf-c) library in your C programs.
 
 You can install the protobuf-c library using the apt-get package manager. This will install the protobuf-c library and the necessary header files and libraries that you can use in your C programs.
@@ -58,4 +60,7 @@ To use the protobuf-c library in your C programs, you will need to include the n
 gcc -I/usr/include/google/ -o program program.c -lprotobuf-c
 ```
 
-Perhaps now you want to jump back to [the first section](#compile-this-code).
+## A Simple Client and Server
+https://github.com/protobuf-c/protobuf-c/wiki/RPC-Example#a-simple-client-and-server
+
+> Perhaps now you want to jump back to [the first section](#compile-this-code).
