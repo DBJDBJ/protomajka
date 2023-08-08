@@ -33,7 +33,7 @@ If you do not have the [protobuf-c](https://github.com/protobuf-c/protobuf-c) li
 
 **Do not use apt-get**, that is not official and latest. Rather take the [source from here](https://github.com/protobuf-c/protobuf-c/releases) and build locally as instructed in [Wiki here](https://github.com/protobuf-c/protobuf-c/wiki).
 
-NOTE: best forget about Windows build.
+NOTE: Windows build should work too. 
 
 # use protobuf-c
 
