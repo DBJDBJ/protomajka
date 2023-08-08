@@ -27,8 +27,6 @@ gcc -I/usr/include/google/ -o receiver receiver.c message.pb-c.c -lprotobuf-c
 
 # install [protobuf-c](https://github.com/protobuf-c/protobuf-c)
 
-(link to the usage [Synopsis](https://github.com/protobuf-c/protobuf-c#synopsis) )
-
 If you do not have the [protobuf-c](https://github.com/protobuf-c/protobuf-c) library and its header files installed on your Linux Mint system, you will need to install them before you can use the [protobuf-c](https://github.com/protobuf-c/protobuf-c) library in your C programs.
 
 You can install the protobuf-c library using the apt-get package manager. This will install the protobuf-c library and the necessary header files and libraries that you can use in your C programs.
@@ -44,9 +42,11 @@ Once protobuf-c is installed, you can use it in your C programs by including the
 
 # use protobuf-c
 
+The link to the usage [Synopsis](https://github.com/protobuf-c/protobuf-c#synopsis) , or if you like pain:
+
 On Linux Mint, the protobuf-c library and its header files and libraries are typically installed in the following directories:
 
-`/usr/include/protobuf-c/`: This directory contains the header files for the protobuf-c library, including "protobuf-c/protobuf-c.h" and the header files generated from your Protobuf message schema by the protoc-c command-line tool.
+`/usr/include/google/protobuf-c/`: This directory contains the header files for the protobuf-c library, including "protobuf-c/protobuf-c.h" and the header files generated from your Protobuf message schema by the protoc-c command-line tool.
 
 `/usr/lib/`: This directory contains the shared libraries for the protobuf-c library, including "libprotobuf-c.so".
 
@@ -55,7 +55,7 @@ On Linux Mint, the protobuf-c library and its header files and libraries are typ
 To use the protobuf-c library in your C programs, you will need to include the necessary header files and link to the protobuf-c library using the -I and -l flags, respectively, when compiling your programs. For example:
 
 ```bash
-gcc -I/usr/include/protobuf-c/ -o program program.c -lprotobuf-c
+gcc -I/usr/include/google/ -o program program.c -lprotobuf-c
 ```
 
 Perhaps now you want to jump back to [the first section](#compile-this-code).
